@@ -1,7 +1,7 @@
 WindowsTools
 ============
 
-**Some handy tools for use in Microsoft Windows** 
+**Some handy tools for use in Microsoft Windows**  
 Copy to a folder in Windows.  I usually create a folder in under Public Documents.  
 Tested on Windows 7 in a specific environment.  
 Use at your own risk.  
