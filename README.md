@@ -15,4 +15,3 @@ UNC Path.js
 - Install:  Right-click | Send To | Send To (see above)
 - Usage (preferred):  Select the files or folders you want the paths of, right-click | Send To | UNC Path, paste into text editor.
 - Usage (alternate):  Drag one or more files or folders onto this, paste into text editor.
-- 
