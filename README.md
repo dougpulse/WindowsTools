@@ -2,9 +2,9 @@ WindowsTools
 ============
 
 **Some handy tools for use in Microsoft Windows** 
-Copy to a folder in Windows.  I usually create a folder in under Public Documents. 
-Tested on Windows 7 in a specific environment. 
-Use at your own risk. 
+Copy to a folder in Windows.  I usually create a folder in under Public Documents.  
+Tested on Windows 7 in a specific environment.  
+Use at your own risk.  
 
 Send To.js
 - Install:  Double-click this to add it to the Send To list.  (Running this script with no arguments causes it to install itself.)
