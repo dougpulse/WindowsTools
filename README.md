@@ -36,6 +36,12 @@ This asks for a commit message, then performs an add, commit, and push.
 - Usage:  Right-click | Send To | push
 - Note:  You may want to rename the shortcut (and maybe the bat file) "git push" if you use more than one version-control product.
 
+**reset.bat**
+Overwrites the local repo from the remote repo.   
+- Install:  Right-click | Send To | Send To (see above)
+- Usage:  Right-click | Send To | reset
+- Note:  You may want to rename the shortcut (and maybe the bat file) "git reset" if you use more than one version-control product.
+
 
 **tidy.bat**
 Uses tidy.exe (http://tidy.sourceforge.net/) to make human-readable XML.  This is great for performing a diff between commits, especially if whatever is writing your XML tends to put everything on one line.
