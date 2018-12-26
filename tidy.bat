@@ -10,8 +10,9 @@ set dirname=%~dp0
 pushd %dirname%
 @rem	do stuff
 
-tidy.exe -q -xml -wrap 0 -indent -o %1 %1
-::tidy.exe -q -indent -o %1 %1
+for %%x in (%*) do (
+	tidy.exe -q -xml -wrap 0 -indent -o %%x %%x
+)
 
 ::pause
 
