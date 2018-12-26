@@ -46,7 +46,7 @@ Overwrites the local repo from the remote repo.
 **tidy.bat**
 Uses tidy.exe (http://tidy.sourceforge.net/) to make human-readable XML.  This is great for performing a diff between commits, especially if whatever is writing your XML tends to put everything on one line.
 - Install:  Right-click | Send To | Send To (see above)
-- Usage:  Right-click | Send To | tidy
-- Note:  You may want to rename the shortcut (and maybe the bat file) "tidy xml" if you want to modify a copy it to tidy html.
+- Usage:  Select one or more files then:  Right-click | Send To | tidy
+- Note:  You may want to rename the shortcut (and maybe the bat file) "tidy xml" if you want to modify a copy of it to tidy html.
 
 
