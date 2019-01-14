@@ -19,6 +19,10 @@ Produces the UNC path to the selected folder or file.  This is useful when commu
 - Usage (preferred):  Select the files or folders you want the paths of, right-click | Send To | UNC Path, paste into text editor.
 - Usage (alternate):  Drag one or more files or folders onto this, paste into text editor.
 
+**LyncKillCTRLEnter.reg**
+In Microsoft Outlook, CTRL+Enter is used to send the message.  In a Lync (Skype for Business) message window, this begins a "phone call" to the user(s) you're chatting with.  Since I use Outlook a lot, I find I'm constantly "ringing" peoples' "phones" via Skype for Business.  I find it very frustrating.  
+To disable this behavior, just run this reg file.
+
   
   
 
