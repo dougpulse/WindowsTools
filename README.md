@@ -37,9 +37,9 @@ Lists the directory structure of the folder.  Outputs one entry per line.  Each 
 
 
 
-  
-  
 
+
+### Git
 I usually don't do branching and merging in git.  Most of what I need is just pull and push (like SVN), so these tools work well for me:  
 **pull.bat**
 Pulls the remote repo to local repo.
@@ -68,3 +68,29 @@ Uses tidy.exe (http://tidy.sourceforge.net/) to make human-readable XML.  This i
 - Note:  You may want to rename the shortcut (and maybe the bat file) "tidy xml" if you want to modify a copy of it to tidy html.
 
 
+
+
+
+### Incomplete/Quirky
+These ones are not full-featured or do strange things like open Excel to display output.  But that could be modified.
+
+**MSAD Groups per User.vbs**
+VBScript that accepts one user name, queries MS Active Directory, and displays all of the groups of which that user is a member.
+- Produces an error if the user name is not found.
+- Outputs to Excel
+- Usage:  Double-click, enter the user name
+
+**MSAD Users per Group.vbs**
+VBScript that accepts one group name, queries MS Active Directory, and displays all of the membership list.
+- Produces an error if the user name is not found.
+- Outputs to Excel
+- Usage:  Double-click, enter the group name
+
+**CompareFolders.bat**
+Compares the directory listing of two folders.
+- Usage:  Drag and drop two folders onto the file.
+- Usage (alternate):  Run from the command line:
+    CompareFolders.bat "First Folder" SomeOtherFolder
+
+**FileTypes** (folder)
+Shows how to create seed files for new documents.
