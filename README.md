@@ -35,9 +35,16 @@ Lists the directory structure of the folder.  Outputs one entry per line.  Each 
 - Usage (preferred):  Select the files or folders you want the paths of, right-click | Send To | UNC Path, paste into text editor or spreadsheet.
 - Usage (alternate):  Drag a folder onto this, paste into text editor or spreadsheet.
 
+**ShortKeys**
+(no associated files)
+Windows allows hotkeys.  For example, I use CTRL+ALT+X to open Excel.  This is done in the property of the shortcut.  I like to keep my hotkeys all in one place.
+- Add a folder named hortkeys to `C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\`
+- Add to that folder any shortcuts to which you want to assign hotkey combinations.
+- For each shortcut, open *Properties*, go to the *Shortcut* tab and add the *Shortcut key:* combination you want to use.
 
 
 
+<br /><br />
 
 ### Git
 I usually don't do branching and merging in git.  Most of what I need is just pull and push (like SVN), so these tools work well for me:  
@@ -69,7 +76,7 @@ Uses tidy.exe (http://tidy.sourceforge.net/) to make human-readable XML.  This i
 
 
 
-
+<br /><br />
 
 ### Incomplete/Quirky
 These ones are not full-featured or do strange things like open Excel to display output.  But that could be modified.
