@@ -2,7 +2,13 @@ WindowsTools
 ============
 
 ### Some handy tools for use in Microsoft Windows
-Copy to a folder in Windows.  I usually create a folder in under Public Documents.  
+Copy to a folder in Windows.  The best way to do this is...
+```
+c:
+cd %userprofile%\documents
+git clone https://github.com/dougpulse/WindowsTools.git WindowsTools
+```
+
 Tested on Windows 7 and 10 in specific environments.  
 Use at your own risk.  
 
