@@ -12,7 +12,9 @@ git clone https://github.com/dougpulse/WindowsTools.git WindowsTools
 Tested on Windows 7 and 10 in specific environments.  
 Use at your own risk.  
 
-In Windows 10, the default location of the SendTo folder is here:  C:\Users\<username>\AppData\Roaming\Microsoft\Windows\SendTo  
+In Windows 10, the default location of the SendTo folder is here:  
+C:\Users\<username>\AppData\Roaming\Microsoft\Windows\SendTo  
+%appdata%\Microsoft\Windows\SendTo  
 
 #### Send To.js
 - Install:  Double-click this to add it to the Send To list.  (Running this script with no arguments causes it to install itself.)
