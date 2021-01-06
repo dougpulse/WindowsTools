@@ -51,6 +51,12 @@ Windows allows hotkeys.  For example, I use CTRL+ALT+X to open Excel.  This is d
 - Add to that folder any shortcuts to which you want to assign hotkey combinations.
 - For each shortcut, open *Properties*, go to the *Shortcut* tab and add the *Shortcut key:* combination you want to use.
 
+#### NewFile
+Based on FileTypes (see below), this creates a registry entry to enable you to set default contents for a new file of the given type when using the "New" item on the context-sensitive toolbar in Windows Explorer.  
+This requires input which is a file path to a file named `seed.<extension>`.  
+It does nothing if the "new file" capability for the given extension already exists.  
+`newfile.ps1` is called by `newfile.bat`, which is called from the shortcut `newfile` (.lnk) which is configured to "Run as administrator" (which is required because we're writing to the registry).  
+- Install:  Right-click on the shortcut named "newfile" | Send To | Send To  
 
 
 <br /><br />
