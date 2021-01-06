@@ -53,10 +53,13 @@ Windows allows hotkeys.  For example, I use CTRL+ALT+X to open Excel.  This is d
 
 #### NewFile
 Based on FileTypes (see below), this creates a registry entry to enable you to set default contents for a new file of the given type when using the "New" item on the context-sensitive toolbar in Windows Explorer.  
-This requires input which is a file path to a file named `seed.<extension>`.  
+This requires input which is a file path to a file named `seed.<extension>`.  (like seed.htm or seed.bat)  
 It does nothing if the "new file" capability for the given extension already exists.  
 `newfile.ps1` is called by `newfile.bat`, which is called from the shortcut `newfile` (.lnk) which is configured to "Run as administrator" (which is required because we're writing to the registry).  
-- Install:  Right-click on the shortcut named "newfile" | Send To | Send To  
+- Install:
+  - Adjust the *Target* and *Start in* properties of the "newfile" shortcut
+  - Right-click on the shortcut named "newfile" | Send To | Send To
+- Usage:  Right-click on the seed file | Send To | newfile | Yes (on the UAC challenge)
 
 
 <br /><br />
