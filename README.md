@@ -61,6 +61,25 @@ It does nothing if the "new file" capability for the given extension already exi
   - Right-click on the shortcut named "newfile" | Send To | Send To
 - Usage:  Right-click on the seed file | Send To | newfile | Yes (on the UAC challenge)
 
+#### WriteToDBTable
+Writes the contents of a CSV file to a SQL Server database on the local machine.  
+It does nothing if the file is not a CSV.  
+`WriteToDBTable.ps1` is called by `WriteToDBTable.bat`.
+- Warnings:
+  - Uses the *dbatools* PowerShell module.  Documentation regarding the workhorse behind this script: https://docs.dbatools.io/#Import-DbaCsv
+  - Assumes SQL Server is running and available on the local machine.
+  - Only CSV files are allowed in this version.
+  - Regarding the table:
+    - If the table exists, records will be appended.
+      - Running this script on the same file twice will result in duplicate rows.  That causes problems for some actions.
+    - If the table exists but has a different structure, there may be unexpected results.
+    - If the table doesn't exist, one will be created using VARCHAR(MAX) as the data type for every column.
+    - Creating a table with appropriate column names and data types and an auto-increment column is preferred.
+- Install:
+  - Open WriteToDBTable.ps1 and adjust as needed.
+  - Right-click on WriteToDBTable.bat | Send To | Send To
+- Usage:  Right-click on the data file (CSV) | Send To | WriteToDBTable
+
 
 <br /><br />
 
