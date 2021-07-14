@@ -130,6 +130,18 @@ VBScript that accepts one group name, queries MS Active Directory, and displays 
 - Outputs to Excel
 - Usage:  Double-click, enter the group name
 
+#### MSADGroupsPerUser.ps1
+PowerShell script that accepts one user name, queries MS Active Directory, and displays all of the groups of which that user is a member.
+- Produces an empty output if the user name is not found.
+- Outputs to Excel
+- Usage:  Right-click, Run with PowerShell, enter the user name
+
+#### MSADUsersPerGroup.ps1
+PowerShell script that accepts one group name, queries MS Active Directory, and displays all of the membership list.
+- Produces an empty output if the user name is not found.
+- Outputs to Excel
+- Usage:  Right-click, Run with PowerShell, enter the group name
+
 #### CompareFolders.bat
 Compares the directory listing of two folders.
 - Usage:  Drag and drop two folders onto the file.
