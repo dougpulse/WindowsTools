@@ -33,11 +33,6 @@ Produces the UNC path to the selected folder or file.  This is useful when commu
 In Microsoft Outlook, CTRL+Enter is used to send the message.  In a Lync (Skype for Business) message window, this begins a "phone call" to the user(s) you're chatting with.  Since I use Outlook a lot, I find I'm constantly "ringing" peoples' "phones" via Skype for Business.  I find it very frustrating.  
 To disable this behavior, just run this reg file.
 
-#### DisableOffice2013TypingAnimation.reg
-
-Newer Microsoft Office products include a horrible new feature that causes the cursor to lag behind where you are typing then slide into place.  
-To disable this behavior, just run this reg file.
-
 #### DirSimple.js
 Lists the directory structure of the folder.  Outputs one entry per line.  Each entry includes the full path to the object.
 - Install:  Right-click | Send To | Send To (see above)
