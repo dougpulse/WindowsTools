@@ -2,5 +2,5 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\.bat\ShellNew]
 "NullFile"=""
-"FileName"="C:\\tools\\FileTypes\\seed.bat"
+"FileName"="C:\\Users\\pulsed\\repos\\WindowsTools\\FileTypes\\seed.bat"
 

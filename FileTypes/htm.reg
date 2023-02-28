@@ -2,5 +2,5 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\.htm\ShellNew]
 "NullFile"=""
-"FileName"="C:\\tools\\FileTypes\\seed.htm"
+"FileName"="C:\\Users\\pulsed\\repos\\WindowsTools\\FileTypes\\seed.htm"
 
