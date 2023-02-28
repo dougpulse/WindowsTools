@@ -28,6 +28,18 @@ Produces the UNC path to the selected folder or file.  This is useful when commu
 - Usage (preferred):  Select the files or folders you want the paths of, right-click | Send To | UNC Path, paste into text editor.
 - Usage (alternate):  Drag one or more files or folders onto this, paste into text editor.
 
+#### CommandLineHere
+
+### CommandLineHere.bat
+
+Opens a Windows command line (cmd.exe) at the selected folder.
+- Install:  Right-click | Send To | Send To (see above)
+- Usage (preferred):  Select the folder you want to start at in the command line, right-click | Send To | CommandLineHere.
+- Usage (alternate):  Drag a folder onto this.
+
+### CommandLineHereAdmin.bat
+Same as CommandLineHere, but requests privilege elevation.
+
 #### LyncKillCTRLEnter.reg
 
 In Microsoft Outlook, CTRL+Enter is used to send the message.  In a Lync (Skype for Business) message window, this begins a "phone call" to the user(s) you're chatting with.  Since I use Outlook a lot, I find I'm constantly "ringing" peoples' "phones" via Skype for Business.  I find it very frustrating.  
