@@ -118,7 +118,7 @@ Overwrites the local repo from the remote repo.
 
 
 #### tidy.bat
-Uses tidy.exe (http://tidy.sourceforge.net/) to make human-readable XML.  This is great for performing a diff between commits, especially if whatever is writing your XML tends to put everything on one line.
+Uses tidy.exe (http://tidy.sourceforge.net/, https://api.html-tidy.org/tidy/tidylib_api_5.2.0/tidy_cmd.html) to make human-readable XML.  This is great for performing a diff between commits, especially if whatever is writing your XML tends to put everything on one line.
 - Install:  Right-click | Send To | Send To (see above)
 - Usage:  Select one or more files then:  Right-click | Send To | tidy
 - Note:  You may want to rename the shortcut (and maybe the bat file) "tidy xml" if you want to modify a copy of it to tidy html.
@@ -154,11 +154,21 @@ PowerShell script that accepts one group name, queries MS Active Directory, and 
 - Outputs to Excel
 - Usage:  Right-click, Run with PowerShell, enter the group name
 
+#### MSADCommonGroups.ps1
+PowerShell script to identify groups of which all specified users are members.
+
+#### MSADCloneGroups.ps1
+PowerShell script to clone all groups whose names begin with a specified string to groups whose names begin with another specified string.
+(There is currently no test to verify the strings differ.)
+
 #### CompareFolders.bat
 Compares the directory listing of two folders.
 - Usage:  Drag and drop two folders onto the file.
 - Usage (alternate):  Run from the command line:
     CompareFolders.bat "First Folder" SomeOtherFolder
+
+#### fn.ps1
+common functions for PowerShell scripts.
 
 #### FileTypes
 (folder)

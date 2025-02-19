@@ -44,7 +44,13 @@ function RemoveDups {
 $userName = Read-Host "user name"
 $un = $userName -replace " ", ""
 $fn = (New-Object -ComObject Shell.Application).NameSpace('shell:Downloads').Self.Path + "\" + $un + "Groups.csv"
+
+$Object = (Get-ADuser $userName).DistinguishedName
+
+
 $g = Get-GroupsForObject -Object (Get-ADuser $userName).DistinguishedName | Sort-Object -Property name
+
+
 
 [System.Collections.ArrayList]$gp = @()
 foreach ($m in $g) {
