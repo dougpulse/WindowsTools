@@ -93,6 +93,13 @@ It does nothing if the file is not a CSV.
 - Usage:  Right-click on the data file (CSV) | Send To | WriteToDBTable
 
 
+#### NotepadRun
+Run code from Notepad++.  If we assume this program is stored at %USERPROFILE%\repo\WindowsTools:
+
+    %USERPROFILE%\repo\WindowsTools\NotepadRun.bat "$(FULL_CURRENT_PATH)"
+
+Notepad++ runs the current SAVED version of the file.  So, to run what you see on the screen, use CTRL+S then F5.
+
 <br /><br />
 
 ### Git
