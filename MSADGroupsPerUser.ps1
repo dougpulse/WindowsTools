@@ -2,7 +2,9 @@
     [cmdletbinding()]
     param(
         [string]$Object = "", 
-        [int]$Level = 0
+        [int]$Level = 0,
+        [int]$i,
+        [string]$Parent
     )
     
     $d = Get-ADObject -Identity $Object -Properties SamAccountName
@@ -13,14 +15,18 @@
 		elseif ($d.ObjectClass -eq "group") {
         $e = Get-ADGroup -Identity $d.DistinguishedName -Properties MemberOf
     }
- 
-    $e.MemberOf | Sort-Object | %{
+    # Stop looping if this group is already in the path
+    if ($Parent -like "*/$($e.Name)/*") {
+        return
+    }
+    $e.MemberOf | Sort-Object | ForEach-Object{
         # prevent a loop if the group is a member of itself
         if ( $_ -ne $e.DistinguishedName ) {
-            Get-GroupsForObject -Object $_  -Level($Level + 1)
+            $me = "$parent/$((Get-ADObject -Identity $_).Name)"
+            Get-GroupsForObject -Object $_ -Parent $me -i $i -Level($Level + 1)
         }
     }
-    $e | select name | Sort-Object -Property name
+    $e | Select-Object name | Sort-Object -Property name
 }
 
 function RemoveDups {
@@ -30,7 +36,6 @@ function RemoveDups {
         [System.Collections.ArrayList]$ArrayList
     )
     $last = ""
-    $this = ""
     [System.Collections.ArrayList]$out = @()
     foreach ($a in $ArrayList) {
         if ($a -ne $last) {
@@ -48,7 +53,7 @@ $fn = (New-Object -ComObject Shell.Application).NameSpace('shell:Downloads').Sel
 $Object = (Get-ADuser $userName).DistinguishedName
 
 
-$g = Get-GroupsForObject -Object (Get-ADuser $userName).DistinguishedName | Sort-Object -Property name
+$g = Get-GroupsForObject -Object (Get-ADuser $userName).DistinguishedName -Parent (Get-ADuser $userName).Name -i 0 | Sort-Object -Property name
 
 
 
